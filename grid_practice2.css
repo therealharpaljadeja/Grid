@@ -1,0 +1,15 @@
+body,html{
+    height: 100%;
+    margin: 0px;
+}
+.container{
+    background: white;
+    height: 100%;
+    grid-gap:3px;
+    display: grid;
+    grid-auto-rows: auto;    
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+div{
+    background: pink;
+}

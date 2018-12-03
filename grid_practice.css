@@ -1,0 +1,40 @@
+body,html{
+    margin: 0px;
+    height: 100%;
+
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-gap: 3px;
+    border:none;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m c c c c c c c c"
+        "f f f f f f f f f f f f"
+}
+div{
+    text-align: center;
+}
+/* grid shorthand 
+grid-template: rows / columns*/
+
+
+.header{
+    background: #4392F1;
+    grid-area: h;
+}
+.footer{
+     background: #FF715B;
+    grid-area: f;
+}
+.content{
+     background: #1EA896;
+    grid-area: c;
+}
+.menu{
+     background: #FFF07C;
+    grid-area: m;
+}
